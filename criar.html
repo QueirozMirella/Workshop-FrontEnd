@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Boostrap 4 - ToDo APP</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Sam Norton">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="tdapp-header">
+        <nav>
+            <ul>
+                <li>
+                    <a class="p-2 text-dark" href="index.html">Lista de Tarefas</a>
+                </li>
+                <li>
+                    <a class="p-2 text-dark" href="criar.html">Adicionar tarefa</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <h1>Bootstrap Tutorial</h1>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on
+                the web.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="tdapp-nome">Nome da tarefa</label>
+                <input type="text" id="tdapp-nome" class="form-control" placeholder="Informe o nome da sua tarefa">
+            </div>
+            <div class="form-group">
+                <label for="tdapp-status">Status da Tarefa</label>
+                <select class="form-control" id="tdapp-status">
+                    <option>Nova</option>
+                    <option>Incompleta</option>
+                    <option>Finalizada (apenas para registro)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="tdapp-info">Descrição da atividade</label>
+                <textarea class="form-control" id="tdapp-info" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Salvar" class="btn btn-success">
+            </div>
+        </form>
+    </div>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-pinterest"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                    <p>
+                        © 2018 - Women Dev Summit na Campus Party
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
